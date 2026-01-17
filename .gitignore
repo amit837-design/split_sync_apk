@@ -45,7 +45,6 @@ app-example
 
 .env
 .vscode
-assets
 components
 constants
 hooks
