@@ -22,11 +22,9 @@
       "package": "com.amit.splitsync"
     },
     "web": {
-      "output": "static",
       "favicon": "./assets/icon.png"
     },
     "plugins": [
-      "expo-router",
       [
         "expo-splash-screen",
         {
@@ -38,11 +36,9 @@
       ]
     ],
     "experiments": {
-      "typedRoutes": true,
       "reactCompiler": true
     },
     "extra": {
-      "router": {},
       "eas": {
         "projectId": "ac7aac40-9d77-4724-925a-159f3a577e1b"
       }
