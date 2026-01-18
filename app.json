@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Split",
-    "slug": "split",
+    "slug": "split-sync",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
