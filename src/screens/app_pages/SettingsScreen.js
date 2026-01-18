@@ -309,13 +309,13 @@ const SettingsScreen = () => {
               1,
               "Help Center",
               "Need help navigating the app? Check our FAQ or contact support.",
-              "support@yourapp.com"
+              "splitsync.noreply@gmail.com"
             )}
             {renderAccordion(
               2,
               "Report a Bug",
               "Found something weird? Let us know!",
-              "bugs@yourapp.com"
+              "splitsync.noreply@gmail.com"
             )}
           </View>
         </AnimatedItem>

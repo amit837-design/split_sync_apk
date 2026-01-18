@@ -1,30 +1,29 @@
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import { Ionicons } from "@expo/vector-icons";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useFocusEffect, useNavigation } from "@react-navigation/native";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity,
+  ActivityIndicator,
+  Animated,
   FlatList,
-  StyleSheet,
   Image,
   RefreshControl,
   SafeAreaView,
-  Animated,
-  Easing,
-  ActivityIndicator,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View
 } from "react-native";
-import { useNavigation, useFocusEffect } from "@react-navigation/native";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { Ionicons } from "@expo/vector-icons";
 
 // API & Context
-import { searchUsersApi } from "../../services/user.api";
-import { fetchChatsApi, accessChatApi } from "../../services/chat.api";
 import { useTheme } from "../../context/ThemeContext";
+import { accessChatApi, fetchChatsApi } from "../../services/chat.api";
+import { searchUsersApi } from "../../services/user.api";
 
 // Components
-import GroupChatModal from "../../components/GroupChatModal";
 import GlobalPoolModal from "../../components/GlobalPoolModal";
+import GroupChatModal from "../../components/GroupChatModal";
 
 // --- SUB-COMPONENT: ANIMATED LIST ITEM ---
 // Runs animation every time the list is focused
